@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 
 class PendulumGraph extends JPanel {
 
-    private BufferedImage bufferedImage = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
+    private final BufferedImage bufferedImage = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
 
     public PendulumGraph() {
         super();

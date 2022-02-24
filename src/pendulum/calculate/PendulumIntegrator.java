@@ -7,7 +7,7 @@ public class PendulumIntegrator {
 
     private final double deltaT;
     private DoubleTuple theta, thetaDot;
-    private PendulumDifferentiator differentiator;
+    private final PendulumDifferentiator differentiator;
     private DoubleTuple thetaDotDot;
 
     /**

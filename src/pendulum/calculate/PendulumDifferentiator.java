@@ -7,7 +7,7 @@ import static java.lang.Math.*;
  */
 public class PendulumDifferentiator {
 
-    private PendulumConfiguration configuration;
+    private final PendulumConfiguration configuration;
 
     public PendulumDifferentiator(PendulumConfiguration configuration) {
         this.configuration = configuration;
