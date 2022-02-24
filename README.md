@@ -5,4 +5,4 @@ The program was done as an excercise. The algorithm used is a Java reimplementat
 
 Parameters of the pendulum: rod lengths 1m, bob masses 1kg.
 
-Build with maven (mvn install), run with java -cp target/double_pendulum-1.0.0-SNAPSHOT.jar pendulum.ui.PendulumUI 
+Build with maven (`mvn install`), run with `java -cp target/double_pendulum-1.0.0-SNAPSHOT.jar pendulum.ui.PendulumUI` 
