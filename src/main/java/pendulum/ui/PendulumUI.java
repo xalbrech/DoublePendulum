@@ -34,15 +34,16 @@ public class PendulumUI {
 
     public static void main(String[] args) {
 
-        PendulumConfiguration configuration = new PendulumConfiguration();
-        PendulumDifferentiator differentiator = new PendulumDifferentiator(configuration);
-        PendulumIntegrator integrator = new PendulumIntegrator(new DoubleTuple(3 * Math.PI / 7, 3 * Math.PI / 4),
+        final PendulumConfiguration configuration = new PendulumConfiguration();
+        final PendulumDifferentiator differentiator = new PendulumDifferentiator(configuration);
+        final PendulumIntegrator integrator = new PendulumIntegrator(new DoubleTuple(3 * Math.PI / 7, 3 * Math.PI / 4),
                 0.001,
                 differentiator);
 
-        AnglesToXY angleConverter = new AnglesToXY(configuration.getL1(), configuration.getL2());
+        final AnglesToXY angleConverter = new AnglesToXY(configuration.getL1(), configuration.getL2());
 
-        PendulumUI theUI = new PendulumUI();
+        final PendulumUI theUI = new PendulumUI();
+
         theUI.start();
 
         java.util.Timer timer = new java.util.Timer();

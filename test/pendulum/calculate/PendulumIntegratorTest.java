@@ -19,14 +19,13 @@ class PendulumIntegratorTest {
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        when(mockDifferential.getNextDifferenceAtPoint(any(), any())).thenReturn(mockThetaDotDot);
+        when(mockDifferential.getNextDifferenceAtPoint(any(DoubleTuple.class), any(DoubleTuple.class))).thenReturn(mockThetaDotDot);
     }
 
     @Test
     public void nextPointInvokesDifferentiator() {
-         PendulumIntegrator integrator = new PendulumIntegrator(mockInitTheta, 0.1, mockDifferential);
-         DoubleTuple result = integrator.getNextAngles();
-         assertNotNull(result);
-
+        PendulumIntegrator integrator = new PendulumIntegrator(mockInitTheta, 0.1, mockDifferential);
+        DoubleTuple result = integrator.getNextAngles();
+        assertNotNull(result);
     }
 }
